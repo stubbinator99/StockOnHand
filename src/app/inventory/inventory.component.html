@@ -1,0 +1,11 @@
+<h2>Inventory</h2>
+
+<ul class="items">
+  <li *ngFor="let item of inventory" 
+  (click)="onSelect(item)" 
+  [class.selected]="item === selectedItem">
+    <span class="badge">{{item.name}}</span>
+  </li>
+</ul>
+
+<app-item-detail [item]="selectedItem"></app-item-detail>

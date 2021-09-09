@@ -158,3 +158,7 @@ chrome-profiler-events*.json
 *.sublime-workspace
 yarn-error.log
 Thumbs.db
+/.vscode/
+
+
+src/app/test-inventory.ts

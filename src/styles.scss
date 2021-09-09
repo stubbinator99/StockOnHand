@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+$main_body_col: #366A8A;
+$menu_body: #142636;
+$item: #13677C;
+$highlight: #2FCFDE;
+
+$main_font: Arial, Helvetica, sans-serif;
+
+body {
+	background-color: $main_body_col;
+	font-family: $main_font;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.mat-mini-fab {
+  background-color: $highlight;
+}
+
+
+
+/* MainPageComponent's private CSS styles */
+.items {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.items li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.items li:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+  left: .1em;
+}
+.items li.selected {
+  background-color: dimgrey;
+  color: white;
+}
+.items li.selected:hover {
+  background-color: #505050;
+  color: white;
+}
+.items li.selected:active {
+  background-color: black;
+  color: white;
+}
+.items .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color:#405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+input {
+  padding: .5rem;
+}
