@@ -1,0 +1,8 @@
+<h2>Inventories</h2>
+<ul class="inventories">
+  <li *ngFor="let invName of inventoryNames">
+    <a [routerLink]="['/my-inventories', invName]">
+      <span class="badge">{{invName}}</span>
+    </a>
+  </li>  
+</ul>

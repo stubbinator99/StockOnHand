@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { InventoryComponent } from './inventory/inventory.component';
+import { MyInventoriesComponent } from './my-inventories/my-inventories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     ItemDetailComponent,
-    InventoryComponent
+    InventoryComponent,
+    MyInventoriesComponent
   ],
   imports: [
     BrowserModule,

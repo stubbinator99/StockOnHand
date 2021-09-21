@@ -1,11 +1,13 @@
-<h2>Inventory</h2>
+<span><button (click)="goBack()">
+  <mat-icon>arrow_back_ios</mat-icon>
+</button></span>
+<h2>{{inventory.name}}</h2>
 
 <ul class="items">
-  <li *ngFor="let item of inventory" 
-  (click)="onSelect(item)" 
-  [class.selected]="item === selectedItem">
+<li *ngFor="let item of inventory.items">
+  <a  [routerLink]="['/my-inventories', inventory.name, item.name]">
     <span class="badge">{{item.name}}</span>
-  </li>
-</ul>
+  </a>
+</li>
 
-<app-item-detail [item]="selectedItem"></app-item-detail>
+<router-outlet></router-outlet>

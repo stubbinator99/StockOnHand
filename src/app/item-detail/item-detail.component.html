@@ -1,9 +1,7 @@
 <div *ngIf="item">
-	<h2>{{item.name}} Details</h2>
-	<div><span>Barcode: </span>{{item.upc}}</div>
-	<div>
-		<label for="item-name">Item name: </label>
-		<input id="item-name" [(ngModel)]="item.name" placeholder="name">
-	</div>
+  <span><button (click)="goBack()">
+    <mat-icon>arrow_back_ios</mat-icon>
+  </button></span>
+	<h2>{{item.name}}</h2>
+	<div *ngIf="item?.upc"><span>Barcode:</span>{{item.upc}}</div>
 </div>
-
