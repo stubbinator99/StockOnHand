@@ -1,0 +1,137 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>stock-on-hand</groupId>
+  <artifactId>rest-api</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Stock On Hand</name>
+  <packaging>war</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <junit.version>5.7.1</junit.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-server</artifactId>
+      <version>2.34</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet</artifactId>
+      <version>2.34</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.inject</groupId>
+      <artifactId>jersey-hk2</artifactId>
+      <version>2.34</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20210307</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.17</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>rds</groupId>
+      <artifactId>software.amazon.awssdk</artifactId>
+      <version>2.17.46</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.thetransactioncompany</groupId>
+      <artifactId>cors-filter</artifactId>
+      <version>2.10</version>
+    </dependency>
+
+
+    <!--<dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <version>2.34</version>
+    </dependency>-->
+    <!--<dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-moxy</artifactId>
+      <version>2.34</version>
+    </dependency>-->
+    <!--<dependency>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-base</artifactId>
+      <version>2.4.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-json-provider</artifactId>
+      <version>2.4.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.12.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-processing</artifactId>
+      <version>2.34</version>
+    </dependency>-->
+
+
+    <!--<dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.transaction</groupId>
+      <artifactId>javax.transaction-api</artifactId>
+      <version>1.3</version>
+      <scope>compile</scope>
+    </dependency>-->
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

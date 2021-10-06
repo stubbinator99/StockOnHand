@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!--<Resource name="jdbc/stock-on-hand-db" 
+              auth="Container"
+              type="javax.sql.DataSource" 
+              username="YOUR_USERNAME" 
+              password="YOUR_PASSWORD"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://mysql.metawerx.net:3306/YOUR_DATABASE_NAME?autoReconnect=true"
+              validationQuery="select 1"
+              maxActive="100" 
+              maxIdle="100"/>-->
+    <Resource name="jdbc/soh_db" 
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.jdbc.Driver" 
+              url="jdbc:mysql://${SOH_HOSTNAME}:${SOH_PORT}/${SOH_DB_NAME}?autoReconnect=true"
+              username="${SOH_USERNAME}" 
+              password="${SOH_PASS}"
+              validationQuery="select 1"
+              maxActive="10" 
+              maxIdle="5"
+              poolPreparedStatements="true"
+              maxOpenPreparedStatements="10"/>
+              
+    <ResourceLink name="jdbc/soh_db"
+                  global="jdbc/soh_db"
+                  auth="Container"
+                  type="javax.sql.DataSource"/>
+
+    <!-- Specify the security realm and location of the users file
+    <Realm className="org.apache.catalina.realm.MemoryRealm" 
+           pathname="/tomcat/webapps/ROOT/WEB-INF/users.xml" />
+    -->
+</Context>

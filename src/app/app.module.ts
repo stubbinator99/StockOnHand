@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +25,8 @@ import { MyInventoriesComponent } from './my-inventories/my-inventories.componen
     AppRoutingModule,
     MatIconModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

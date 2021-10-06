@@ -12,9 +12,10 @@ const routes: Routes = [
             children: [
               { path: '', component: InventoryComponent},
               { path: ':itemName', component: ItemDetailComponent }
-        ]}          
-  ]}
-  
+        ]}
+  ]
+  }
+
   //{ path: '', redirectTo: '/my-inventories', pathMatch: 'full'}
 ];
 
